@@ -19,7 +19,7 @@ if evntlg :
     ("FF".encode())
     time.sleep(0.1)
     sr.write('RR'.encode())
-    
+
 for i in ints:
     thisbyte=str(hex(i).split('x')[-1]).encode()
     if evntlg: 
@@ -28,7 +28,7 @@ for i in ints:
     else: print(thisbyte)
     if evntlg:
         sr.write('RR'.encode())
-7        time.sleep(0.025)
+        time.sleep(0.025)
     else: print('RR'.encode())
 
 if evntlg:
